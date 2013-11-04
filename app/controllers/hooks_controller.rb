@@ -2,7 +2,7 @@ require 'faker'
 class HooksController < ApplicationController
 
   def github
-   user = User.build(
+   user = User.new(
       uid:      Random.new.rand(1..1000000).to_s,
       provider: 'github',
       username: Faker::Internet.email,
