@@ -1,3 +1,4 @@
+require 'faker'
 class HooksController < ApplicationController
 
   def github
