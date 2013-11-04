@@ -5,8 +5,8 @@ class HooksController < ApplicationController
    user = User.new(
       uid:      Random.new.rand(1..1000000).to_s,
       provider: 'github',
-      username: Faker::Internet.email,
-      email:    Faker::Internet.user_name,
+      email:    Faker::Internet.email,
+      username: Faker::Internet.user_name,
       password: '12345678'
     )
     respond_to do |format|
