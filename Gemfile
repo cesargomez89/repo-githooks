@@ -9,6 +9,9 @@ gem 'turbolinks'
 gem 'pg'
 gem 'devise'
 gem 'omniauth-github'
+gem 'haml'
+gem 'html2haml'
+gem 'pry'
 
 group :doc do
   gem 'sdoc', require: false
