@@ -7,6 +7,8 @@
     = csrf_meta_tags
   %body
     %header
-      - unless user_signed_in?
-        = link_to 'sign in with github', user_omniauth_authorize_path(:github)
+      - if user_signed_in?
+        = link_to 'sign out', destroy_user_session_path
+      - else
+        = link_to 'sign in with Github', user_omniauth_authorize_path(:github)
     = yield

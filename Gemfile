@@ -12,6 +12,8 @@ gem 'omniauth-github'
 gem 'haml'
 gem 'html2haml'
 gem 'pry'
+gem 'httparty'
+gem 'decent_exposure'
 
 group :doc do
   gem 'sdoc', require: false
