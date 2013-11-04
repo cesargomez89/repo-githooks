@@ -15,6 +15,7 @@ gem 'html2haml'
 gem 'httparty'
 gem 'decent_exposure'
 gem 'rails_12factor'
+gem 'faker'
 
 group :doc do
   gem 'sdoc', require: false
