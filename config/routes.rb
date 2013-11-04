@@ -4,7 +4,7 @@ RepoGithooks::Application.routes.draw do
 
   resources :welcome, only: [:index]
 
-  resources :hooks, only: :index, defaults: {format: 'json'} do
+  resources :hooks, only: :index do
     collection do
       post :github
     end
