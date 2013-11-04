@@ -232,7 +232,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   require "omniauth-github"
-  CONFIG = YAML.load(Rails.root.join('config', 'github_auth.yml'))
+  CONFIG = YAML.load_file("#{Rails.root}/config/github_auth.yml")[Rails.env]
   config.omniauth :github, CONFIG['client_id'], CONFIG['client_secret'], :scope => 'user,public_repo'
 
   # ==> Warden configuration
