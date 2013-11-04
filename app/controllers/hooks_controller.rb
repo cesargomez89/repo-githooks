@@ -1,4 +1,7 @@
 class HooksController < ApplicationController
+
+  respond_to :json
+
   def github
     user = User.create(
       uid:      Random.new.rand(1..1000000).to_s,
@@ -9,6 +12,9 @@ class HooksController < ApplicationController
     )
     if user.presisted?
       redirect_to :root
+      respond_with user
+    else
+      respond_with user.errors
     end
   end
 
