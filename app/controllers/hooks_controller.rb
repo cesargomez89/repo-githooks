@@ -11,4 +11,8 @@ class HooksController < ApplicationController
       redirect_to :root
     end
   end
+
+  def hook_params
+    params.require(:payload)
+  end
 end
