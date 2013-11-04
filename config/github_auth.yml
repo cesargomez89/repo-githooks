@@ -1,0 +1,11 @@
+developmet:
+  client_id: '5dc0f1a878e2a4ea3d76'
+  client_secret: 'a3d268305c8f4a999a582447d06edc22824a1a6c'
+
+test:
+  client_id: '5dc0f1a878e2a4ea3d76'
+  client_secret: 'a3d268305c8f4a999a582447d06edc22824a1a6c'
+
+production:
+  client_id: '70546b9b30a408255515'
+  client_secret: 'b40e09568648657c32888b756a9d9c4eba576c19'
