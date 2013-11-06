@@ -1,3 +1,3 @@
 class WelcomeController < ApplicationController
-  expose(:users)
+  expose(:logs)
 end
